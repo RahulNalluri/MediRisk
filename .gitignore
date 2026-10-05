@@ -73,18 +73,15 @@ Desktop.ini
 /MediRisk_release_*/
 /MediRisk_runnable_*.zip
 /demo_report_render/
-/reports/*
-!/reports/*.example
+/reports/
 /MediRisk_Demo_Handoff_Report.docx
 
-# Local project assets; keep only safe example templates in Git.
+# Local project assets; keep safe knowledge, dataset, and model examples in Git.
 /backend/knowledge/*
 !/backend/knowledge/*.example
 /data/*
 !/data/*.example
 /models/*
 !/models/*.example
-/plots/*
-!/plots/*.example
-/docs/*
-!/docs/*.example
+/plots/
+/docs/

@@ -111,10 +111,10 @@ notebooks/                Analysis and model development
 scripts/                  Report generator and OpenRouter check
 models/                   Local trained models and example guide
 data/                     Local datasets and header-only examples
-plots/                    Local analysis figures and example guide
-docs/                     Local documents and example guide
+plots/                    Local analysis figures (entire folder ignored)
+docs/                     Local documents (entire folder ignored)
 config/private/           Local credentials and login-note templates
-reports/                  Generated reports and example template
+reports/                  Local/generated reports (entire folder ignored)
 logs/                     Local backend logs
 releases/                 Local release snapshots and bundles
 storage/                  Legacy vector database backup
@@ -126,7 +126,7 @@ requirements.txt          Pinned application dependencies
 
 ## What is included in a source checkout
 
-Source code, notebooks, prompts, and safe `.example` templates are eligible for Git. Actual contents of `backend/knowledge/`, `data/`, `models/`, `plots/`, `docs/`, `config/private/`, and `reports/` are ignored. Direct `.example` files in those folders are retained as references.
+Source code, notebooks, prompts, and safe `.example` templates are eligible for Git. Actual contents of `backend/knowledge/`, `data/`, `models/`, and `config/private/` are ignored, with direct `.example` files retained as references. The entire `docs/`, `reports/`, and `plots/` folders are excluded, including their local example files.
 
 | Example | Purpose |
 | --- | --- |
@@ -135,11 +135,8 @@ Source code, notebooks, prompts, and safe `.example` templates are eligible for 
 | [Dataset guide](data/README.md.example) and `data/*.csv.example` | Dataset filenames and column headers |
 | [Model guide](models/README.md.example) | Required trained artifacts and development notebooks |
 | [Private configuration guide](config/private/README.md.example) | Credential placement and local login notes |
-| [Documentation guide](docs/README.md.example) | Local document and diagram layout |
-| [Plot guide](plots/README.md.example) | Notebook figure locations |
-| [Report template](reports/report.md.example) | Outline for a local report |
 
-Examples contain placeholders or headers only. Supply real local assets before using the features that depend on them. Ignoring files preserves the existing local copies; `.gitignore` does not remove files already tracked by Git.
+Examples contain placeholders or headers only. Supply real local assets before using the features that depend on them. Create `plots/` before running plotting cells and keep project documents and generated reports locally in `docs/` and `reports/`. Ignoring files preserves the existing local copies; `.gitignore` does not remove files already tracked by Git.
 
 ## Run locally
 

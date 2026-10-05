@@ -1,8 +1,0 @@
-# Local analysis plots
-
-Notebook-generated PNG figures belong in this directory and remain local.
-Create this directory before running plotting cells, and run notebooks from
-`notebooks/` so `../plots/` resolves correctly.
-
-The report generator looks for local figures in this directory and skips images
-that are unavailable. This template is not an image file.

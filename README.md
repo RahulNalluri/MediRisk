@@ -2,7 +2,7 @@
 
 ### Disease risk screening, patient records, and multilingual health guidance
 
-MediRisk is an AI-assisted healthcare demo that brings diabetes and heart disease risk screening into a hospital-style workflow. Staff can register patients, record visits, enter report values, view model-generated explanations, and share doctor-written summaries. Patients can view their own information and ask a chatbot questions using the context of their stored reports.
+MediRisk is an AI-assisted healthcare system that brings diabetes and heart disease risk screening into a hospital-style workflow. Staff can register patients, record visits, enter report values, view model-generated explanations, and share doctor-written summaries. Patients can view their own information and ask a chatbot questions using the context of their stored reports.
 
 The project connects machine learning, medical knowledge retrieval, and patient record management through a Flask backend and a browser-based interface. It is intended for academic demonstrations and local development.
 

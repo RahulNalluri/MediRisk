@@ -1,0 +1,90 @@
+# Environment variables and private credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+google-translate-key.json
+*.pem
+*.key
+DEMO_LOGINS.local.md
+/config/private/*
+!/config/private/*.example
+
+# Python environments, bytecode, and tooling caches
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.cache/
+.ipynb_checkpoints/
+
+# Python packaging and coverage output
+build/
+dist/
+*.egg-info/
+.eggs/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Local application databases and SQLite sidecar files
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Generated Chroma indexes (rebuild with backend/index.py)
+/vectordb/
+/backend/vectordb/
+/storage/
+
+# Logs, temporary files, and editor/OS state
+*.log
+/logs/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local release copies and generated report artifacts
+/releases/
+/MediRisk_release_*/
+/MediRisk_runnable_*.zip
+/demo_report_render/
+/reports/*
+!/reports/*.example
+/MediRisk_Demo_Handoff_Report.docx
+
+# Local project assets; keep only safe example templates in Git.
+/backend/knowledge/*
+!/backend/knowledge/*.example
+/data/*
+!/data/*.example
+/models/*
+!/models/*.example
+/plots/*
+!/plots/*.example
+/docs/*
+!/docs/*.example

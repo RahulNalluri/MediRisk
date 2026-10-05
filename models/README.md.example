@@ -1,0 +1,19 @@
+# Local trained models
+
+Provide these real trained model artifacts before using prediction endpoints:
+
+| Required artifact | Development notebook |
+| --- | --- |
+| diabetes_xgb_final.pkl | notebooks/MediRisk_Diabetes_Analysis.ipynb |
+| diabetes2_xgb_model.pkl | notebooks/Diabetes2_Analysis.ipynb |
+| heart_xgb_model.pkl | notebooks/MediRisk_HeartDisease_Analysis..ipynb |
+
+`backend/predict.py` loads all three together on its first import. Restore
+compatible artifacts from your local project backup or train/export them from
+the notebooks with the required datasets and dependencies.
+
+The project also has diabetes_rf_model.pkl and diabetes2_label_encoder.pkl for
+model development. These are not loaded by the current prediction backend.
+
+Do not rename this template to `.pkl`; it is documentation, not a serialized
+model. Real model files are intentionally excluded from Git.

@@ -1,0 +1,8 @@
+[CHUNK_START]
+TOPIC: replace_with_topic_identifier
+DISEASE: replace_with_disease_identifier
+SOURCE: replace_with_verified_source_reference
+KEYWORDS: replace, with, relevant, keywords
+
+Replace this placeholder with reviewed knowledge text before indexing.
+[CHUNK_END]

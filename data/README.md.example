@@ -1,0 +1,20 @@
+# Local datasets
+
+The `.csv.example` files contain column headers only, with no patient or dataset
+rows. They document the current schema; they are not training datasets.
+
+Supply the real input datasets locally:
+
+- diabetes.csv
+- diabetes_dataset.csv
+- heart_disease_uci.csv
+
+The analysis notebooks use or produce these cleaned datasets:
+
+- diabetes_clean.csv
+- diabetes_dataset_clean.csv
+- heart_clean.csv
+
+Run notebooks with `notebooks/` as the working directory so their `../data/`,
+`../models/`, and `../plots/` paths resolve correctly. The application dependency
+list does not include every optional notebook dependency.

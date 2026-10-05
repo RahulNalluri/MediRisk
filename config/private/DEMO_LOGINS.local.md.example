@@ -1,0 +1,12 @@
+# Private local demo account notes
+
+Copy this file to DEMO_LOGINS.local.md before filling it in.
+Keep this `.example` file free of real usernames and passwords.
+
+| Role | Local username | Local password |
+| --- | --- | --- |
+| Super admin | <username> | <password> |
+| Hospital admin | <username> | <password> |
+| Doctor | <username> | <password> |
+| Receptionist | <username> | <password> |
+| Patient | <generated username> | <temporary password> |

@@ -1,0 +1,21 @@
+# MediRisk local report template
+
+Report title: <title>
+Generated on: <date>
+Purpose: <demo or analysis purpose>
+
+## Inputs
+
+<Describe local inputs and their sources.>
+
+## Results
+
+<Add generated outputs and their interpretation.>
+
+## Limitations
+
+<Record relevant limitations and follow-up work.>
+
+Copy to a local `.md` file before filling in real information. Actual reports
+remain ignored. `scripts/build_demo_report.py` writes its Word output here as
+`MediRisk_Demo_Handoff_Report.docx`.

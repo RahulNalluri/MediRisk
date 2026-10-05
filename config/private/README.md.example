@@ -1,0 +1,13 @@
+# Local credentials and login notes
+
+Use this directory for real Google Cloud credentials and local demo login notes.
+Only `.example` files are eligible for Git; keep their content as placeholders.
+
+- google-translate-key.json.example documents the credential structure. Obtain
+  the real JSON file from your Google Cloud service account and save it as
+  google-translate-key.json. The placeholder file cannot authenticate.
+- DEMO_LOGINS.local.md.example is an outline for private demo account notes.
+  Copy it to DEMO_LOGINS.local.md before entering any real credentials.
+
+Set OPENROUTER_API_KEY in the project root `.env`, using `.env.example` as the
+template. The translation code automatically checks the real JSON path here.

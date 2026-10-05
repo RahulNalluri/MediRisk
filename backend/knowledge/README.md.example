@@ -1,0 +1,17 @@
+# Local chatbot knowledge
+
+Restore these eight text files here before running `python backend/index.py`:
+
+- diabetes.txt
+- diabetes_types.txt
+- heart_disease.txt
+- general_health.txt
+- foods.txt
+- indian_diet.txt
+- south_indian_diabetes_diet.txt
+- heart_diet_indian.txt
+
+`chunk.txt.example` shows the parser format using placeholder content.
+The indexer reads the eight filenames above; it does not read `.example` files.
+Replace placeholders with reviewed content and accurate source attribution in
+the real `.txt` files before indexing. Real knowledge files remain local.

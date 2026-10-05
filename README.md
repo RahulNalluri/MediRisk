@@ -6,6 +6,22 @@ MediRisk is an AI-assisted healthcare demo that brings diabetes and heart diseas
 
 The project connects machine learning, medical knowledge retrieval, and patient record management through a Flask backend and a browser-based interface. It is intended for academic demonstrations and local development.
 
+## Recorded model accuracy
+
+The development notebooks report the following test-set accuracy scores:
+
+| Prediction task | Model/configuration | Accuracy | Test samples | Evaluation source |
+| --- | --- | --- | --- | --- |
+| Binary diabetes screening | XGBoost + SMOTE | **72.73%** | 154 | [Diabetes analysis](notebooks/MediRisk_Diabetes_Analysis.ipynb) |
+| Experimental diabetes type classification | XGBoost, four classes | **95.07%** | 14,000 | [Diabetes type analysis](notebooks/Diabetes2_Analysis.ipynb) |
+| Heart disease prediction | XGBoost, binary classification | **92.93%** | 184 | [Heart disease analysis](notebooks/MediRisk_HeartDisease_Analysis..ipynb) |
+
+All three evaluations use an 80% training / 20% test split with `random_state=42`. SMOTE is applied to the binary diabetes training split. Its 72.73% score comes from the notebook's XGBoost + SMOTE evaluation; the final `diabetes_xgb_final.pkl` export uses the same model parameters and oversampling approach, without printing another accuracy measurement in the export cell.
+
+For comparison, the binary diabetes Random Forest baseline recorded **75.97%** accuracy on 154 test samples. The current backend uses the exported XGBoost models. The **95.07%** result belongs to the separate diabetes type classifier.
+
+These scores are taken from saved notebook outputs and have not been independently rerun for this documentation update. They describe development test-set performance and do not establish clinical validation. No numerical accuracy evaluation is recorded here for the questionnaire-based heart screening or chatbot.
+
 ## The problem it addresses
 
 A disease prediction model is only one part of a useful healthcare application. People also need explanations, a history of their results, access to their doctor's guidance, and information in a language they understand. Staff need a way to connect those results to the right patient and visit.

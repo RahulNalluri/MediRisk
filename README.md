@@ -222,7 +222,7 @@ exit()
 
 Run this example once: hospital codes and usernames must be unique. Passwords require at least eight characters with an uppercase letter, a lowercase letter, and a number. Use the same `create_user` function to create doctor or receptionist accounts for the hospital; a `super_admin` account does not require a hospital ID.
 
-Patient accounts are generated during registration. Login-page demo buttons work only when their matching accounts and passwords exist in your local database.
+Patient accounts are generated during registration. Enter your credentials in the login form; demo credentials are kept only in ignored local notes at `config/private/DEMO_LOGINS.local.md`.
 
 ### 4. Build the chatbot index
 

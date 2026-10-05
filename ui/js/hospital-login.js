@@ -20,14 +20,6 @@ function dashboardForRole(user) {
 
 themeToggle.addEventListener('click', toggleHospitalTheme);
 
-document.querySelectorAll('.demo-users button').forEach((button) => {
-    button.addEventListener('click', () => {
-        usernameInput.value = button.dataset.user;
-        passwordInput.value = button.dataset.pass;
-        setMessage('');
-    });
-});
-
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
     setMessage('Checking credentials...', true);
